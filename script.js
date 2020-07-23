@@ -19,3 +19,27 @@ personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
 
+if ("j") {
+    console.log("It works");
+} else {
+    console.log("Fatal Error");
+}
+
+const num = 45;
+
+switch (num) {
+    case 45:
+        console.log("Неправильно");
+         break;
+    case 40:
+        console.log("Неправильно");
+         break; 
+    case 50:
+        console.log("Правильно");
+         break;       
+    case 48:
+        console.log("Неправильно");
+         break;
+    default: 
+        console.log("Ничего из перечисленного");
+}
