@@ -1,96 +1,36 @@
 "use strict";
-const numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели?","Введите количество");
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat:false
-};
+let num = 20;
 
-// const a = prompt("Введите название одного из последних ваших просмотренных фильмов",""), 
-//       b = prompt("Поставьте оценку этому фильму",""),
-//       c = prompt("Введите название одного из последних ваших просмотренных фильмов",""),
-//       d = prompt("Поставьте оценку этому фильму","");
-
-// personalMovieDB.movies[a] = b;
-// personalMovieDB.movies[c] = d;
-
-// console.log(personalMovieDB);
-
-////version 1
-
-// for (let i = 0; i < 2; i++) {
-//      const a = prompt("Введите название одного из последних ваших просмотренных фильмов",""),
-//      b = prompt("Поставьте оценку этому фильму","");
-
-//      switch (a,b) {
-//          case null:
-//              alert("Вы не можете не отвечать на эти вопросы!");
-//              i--;
-//              continue;
-//      }
-
-//      if (((a.length || b.length) === 0) || ((a.length || b.length) > 50)) {
-//      alert("Ответ не должен быть пустым, и его значение не должно превышать 50 символов!");
-//      i--;
-//      }
-
-//      personalMovieDB.movies[a] = b;
-// }
-
-// //version 2
-// let i = 0;
-// while (i < 2) {
-//     const a = prompt("Введите название одного из последних ваших просмотренных фильмов",""),
-//     b = prompt("Поставьте оценку этому фильму","");
-//     i++;
-
-//     switch (a,b) {
-//         case null:
-//             alert("Вы не можете не отвечать на эти вопросы!");
-//             i--;
-//             continue;
-//     }
-
-//     if (((a.length || b.length) === 0) || ((a.length || b.length) > 50)) {
-//     alert("Ответ не должен быть пустым, и его значение не должно превышать 50 символов!");
-//     i--;
-//     }
-
-//     personalMovieDB.movies[a] = b;
-// }
-
-//version 3
-let i = 0;
-do {
-    const a = prompt("Введите название одного из последних ваших просмотренных фильмов",""),
-    b = prompt("Поставьте оценку этому фильму","");
-    i++;
-
-    switch (a,b) {
-        case null:
-            alert("Вы не можете не отвечать на эти вопросы!");
-            i--;
-            continue;
-    }
-
-    if (((a.length || b.length) === 0) || ((a.length || b.length) > 50)) {
-    alert("Ответ не должен быть пустым, и его значение не должно превышать 50 символов!");
-    i--;
-    }
-
-    personalMovieDB.movies[a] = b;
-}   while (i<2)
-
-if(personalMovieDB.count <= 10) {
-    alert("Просмотрено довольно мало фильмов");
-}   else if (personalMovieDB.count <30 && personalMovieDB.count >10) {
-    alert("Вы классический зритель");
-}   else if (personalMovieDB.count >= 30) {
-    alert("Вы киноман.");
-}   else {
-    alert("Произошла ошибка");
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 10;
+    console.log(num);
 }
 
+showFirstMessage("Hello World");
+console.log(num);
+
+// function calc(a, b) {
+//     return (a + b);
+// }
+//  console.log(calc(4,6));
+//  console.log(calc(1239,237));
+//  console.log(calc(-189,300));
+
+ function ret() {
+     let num = 50;
+     return num;
+ }
+
+ const anotherNum = ret(); 
+ console.log(anotherNum);
+
+ const logger = function() {
+    console.log("hello");
+ };
+
+ logger();
+
+ const calc = (a,b) => a+b; 
+ console.log(calc(6,54));
