@@ -1,30 +1,43 @@
 "use strict";
 
-function first(){
-    //Do something
-    setTimeout(function(){
-        console.log(1);
-    }, 500);
-}
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function() {
+        console.log(`test`);
+    }
+};
 
-function second() {
-    console.log(2);
-}
+options.makeTest();
 
-first();
-second();
+const {border, bg} = options.colors;
+console.log(border);
 
-function done() {
-    console.log(`Я прошел данный урок`);
-}
+// console.log(Object.keys(options).length);
 
-function learnJS(lang, callback) {
-    console.log(`Я учу: ${lang}`);
-    callback();
-}
+// console.log(options.colors.bg);
 
-learnJS(`JavaScript`, done);
+// delete options.name;
 
-learnJS(`JavaScript`, function() {
-    console.log(`Я прошел этот урок`);
-});
+// console.log(options);
+
+// let counter = 0;
+
+// for (let key in options) {
+//      if (typeof(options[key]) === 'object') {
+//          for (let i in options[key]) {
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//             counter++;
+//         } 
+//         } else {
+//             console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//             counter++;
+//     }
+// }
+
+// console.log(`Всего свойств объекта: ${counter}`);
