@@ -91,3 +91,5 @@ const video = ['youtube', 'vimeo', 'rutube'],
     };
 
     const newObj = {...q};
+
+    console.log(newObj);
